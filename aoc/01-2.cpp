@@ -1,10 +1,13 @@
 #include "aoc.h"
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 using std::stoi;
 using std::endl;
 using std::cout;
+using std::pair;
+using std::find;
 
 void Day1Part2() {
   int answer;
@@ -23,11 +26,16 @@ void Day1Part2() {
 	  else
 	  	group2.push_back(n);
   }
+
+  cout << "Part 2:\n";
   
   for (int num : group1) {
 	  for (int addend : group2) {
-		  if (num + addend == 2020) {
-			  cout << "Part 2:\n" << num << " + " << addend << " = 2020\nThe final answer is: " << num * addend << endl;
+		  for (int addend2 : group2) {
+			if (num + addend + addend2 == 2020) {
+				cout << num << " + " << addend << " + " << addend2 << " = 2020\n";
+				cout << num << " * " << addend << " * " << addend2 << " = " << num * addend * addend2 << "\n";
+			}
 		  }
 	  }
   }
