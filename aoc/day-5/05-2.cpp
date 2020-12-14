@@ -1,20 +1,16 @@
-#include "aoc.h"
+#include "../aoc.h"
 #include <iostream>
 #include <string>
 #include <algorithm>
 
 #include "05.h"
 
-using std::stoi;
-using std::endl;
-using std::cout;
-
 bool Contains(vector<int> vect, int number) {
-	return std::find(vect.begin(), vect.end(), number) != vect.end();
+	return find(vect.begin(), vect.end(), number) != vect.end();
 }
 
 void Day5Part2() {
-  vector<string> input = read_file("aoc/05.txt");
+  vector<string> input = read_file("aoc/day-5/input.txt");
   auto start = std::chrono::steady_clock::now();
     
   Range seat;

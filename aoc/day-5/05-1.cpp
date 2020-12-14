@@ -1,12 +1,8 @@
-#include "aoc.h"
+#include "../aoc.h"
 #include <iostream>
 #include <string>
 
 #include "05.h"
-
-using std::stoi;
-using std::endl;
-using std::cout;
 
 Answer ReadRow(string str) {
 	Answer answer;
@@ -51,7 +47,7 @@ Answer ReadRow(string str) {
 }
 
 void Day5Part1() {
-  vector<string> input = read_file("aoc/05.txt");
+  vector<string> input = read_file("aoc/day-5/input.txt");
   auto start = std::chrono::steady_clock::now();
     
   Range seat;

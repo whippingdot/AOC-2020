@@ -1,22 +1,16 @@
-#include "aoc.h"
+#include "../aoc.h"
 #include <iostream>
 #include <string>
 #include <algorithm>
 
 #include "03.h"
 
-using std::stoi;
-using std::endl;
-using std::cout;
-using std::pair;
-using std::find;
-
 void Day3Part2() {
   int answer;
 
   auto start = std::chrono::steady_clock::now();
 
-  Map map = Map(Read_Raw("aoc/03.txt"));
+  Map map = Map(Read_Raw("aoc/day-3/input.txt"));
   
   vector<pair<int, int>> slopes = vector<pair<int, int>>();
 

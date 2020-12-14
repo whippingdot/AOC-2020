@@ -1,14 +1,10 @@
-#include "aoc.h"
+#include "../aoc.h"
 #include <iostream>
 #include <string>
 
-using std::stoi;
-using std::endl;
-using std::cout;
-
 void Day1Part1() {
   int answer;
-  vector<string> input = read_file("aoc/01.txt");
+  vector<string> input = read_file("aoc/day-1/input.txt");
   auto start = std::chrono::steady_clock::now();
 
   vector<int> group1 = vector<int>();

@@ -1,17 +1,11 @@
-#include "aoc.h"
+#include "../aoc.h"
 #include <iostream>
 #include <string>
 #include <algorithm>
 
-using std::stoi;
-using std::endl;
-using std::cout;
-using std::pair;
-using std::find;
-
 void Day1Part2() {
   int answer;
-  vector<string> input = read_file("aoc/01.txt");
+  vector<string> input = read_file("aoc/day-1/01.txt");
   auto start = std::chrono::steady_clock::now();
 
   vector<int> group1 = vector<int>();

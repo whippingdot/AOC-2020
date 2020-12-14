@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include "aoc/aoc.h"
-#include "aoc/02.h"
-#include "aoc/03.h"
-#include "aoc/04.h"
+#include "aoc/day-2/02.h"
+#include "aoc/day-3/03.h"
+#include "aoc/day-4/04.h"
 
 string Read_Raw(string name) {
   std::ifstream file(name);
@@ -199,9 +199,21 @@ int main() {
   // Day4Part1();
   // Day4Part2();
 
-  std::cout << "\n\nDay 5: \n\n";
-  Day5Part1();
-  Day5Part2();
+  // std::cout << "\n\nDay 5: \n\n";
+  // Day5Part1();
+  // Day5Part2();
+
+  // std::cout << "\n\nDay 6: \n\n";
+  // Day6Part1();
+  // Day6Part2();
+  // TestDay6Part1();
+
+  // std::cout << "\n\nDay 7: \n\n";
+  // Day7Part1();
+  // Day7Part2();
+
+  std::cout << "\n\nDay 8: \n\n";
+  Day8Part1();
 
   auto end = std::chrono::steady_clock::now();
 
